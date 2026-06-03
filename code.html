@@ -1,0 +1,629 @@
+<!doctype html>
+
+<html class="dark" lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Kevin Soares | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@500&amp;family=Metropolis:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container": "#1f1f1f",
+              "on-primary": "#1000a9",
+              "on-primary-fixed": "#07006c",
+              "primary-fixed": "#e1e0ff",
+              "tertiary-fixed-dim": "#ffb783",
+              "on-tertiary-fixed-variant": "#703700",
+              error: "#ffb4ab",
+              background: "#131313",
+              surface: "#131313",
+              "on-primary-container": "#0d0096",
+              "inverse-surface": "#e2e2e2",
+              secondary: "#e1c296",
+              "on-surface": "#e2e2e2",
+              "on-secondary": "#402d0d",
+              "on-tertiary-fixed": "#301400",
+              "primary-fixed-dim": "#c0c1ff",
+              "on-primary-fixed-variant": "#2f2ebe",
+              "on-error-container": "#ffdad6",
+              "on-surface-variant": "#c7c4d7",
+              "error-container": "#93000a",
+              "surface-container-lowest": "#0e0e0e",
+              "on-secondary-fixed": "#281800",
+              "surface-container-high": "#2a2a2a",
+              "tertiary-container": "#d97721",
+              "inverse-primary": "#494bd6",
+              "surface-elevated": "#1A1A1A",
+              "on-secondary-container": "#cfb086",
+              "on-secondary-fixed-variant": "#594321",
+              "surface-variant": "#353535",
+              "secondary-fixed-dim": "#e1c296",
+              "on-tertiary-container": "#452000",
+              "surface-dim": "#131313",
+              "on-background": "#e2e2e2",
+              "secondary-fixed": "#ffddb0",
+              "vibrant-indigo": "#6366F1",
+              "surface-container-highest": "#353535",
+              "accent-gold": "#B89B72",
+              "surface-tint": "#c0c1ff",
+              "on-error": "#690005",
+              "surface-container-low": "#1b1b1b",
+              "primary-container": "#8083ff",
+              outline: "#908fa0",
+              "text-muted": "#8E8781",
+              "tertiary-fixed": "#ffdcc5",
+              primary: "#c0c1ff",
+              "secondary-container": "#594321",
+              "on-tertiary": "#4f2500",
+              tertiary: "#ffb783",
+              "inverse-on-surface": "#303030",
+              "outline-variant": "#464554",
+              "surface-bright": "#393939",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              "margin-desktop": "64px",
+              gutter: "24px",
+              unit: "8px",
+              "margin-mobile": "20px",
+              "container-max": "1280px",
+            },
+            fontFamily: {
+              "display-lg": ["Montserrat"],
+              "label-sm": ["JetBrains Mono"],
+              "body-lg": ["Metropolis"],
+              "headline-md": ["Montserrat"],
+              "body-md": ["Metropolis"],
+              "display-lg-mobile": ["Montserrat"],
+            },
+            fontSize: {
+              "display-lg": [
+                "72px",
+                {
+                  lineHeight: "80px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-sm": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.05em",
+                  fontWeight: "500",
+                },
+              ],
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+              "headline-md": [
+                "32px",
+                { lineHeight: "40px", fontWeight: "600" },
+              ],
+              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+              "display-lg-mobile": [
+                "40px",
+                {
+                  lineHeight: "48px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-black">
+    <!-- TopNavBar -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-background/70 backdrop-blur-md border-b border-white/5 transition-all duration-300 ease-in-out"
+    >
+      <div
+        class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto"
+      >
+        <a
+          class="font-display-lg-mobile text-display-lg-mobile font-bold text-on-surface tracking-tighter"
+          href="#principal"
+          >Kevin Soares</a
+        >
+        <div class="hidden md:flex gap-8 items-center">
+          <a
+            class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md"
+            href="#sobre"
+            >Sobre</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md"
+            href="#projetos"
+            >Projetos</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md"
+            href="#contato"
+            >Contato</a
+          >
+        </div>
+        <!-- Mobile Menu Toggle (Simplified) -->
+        <button class="md:hidden text-on-surface">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="principal"
+        class="min-h-screen flex flex-col md:flex-row items-center justify-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pt-24 gap-12 overflow-hidden"
+      >
+        <div class="flex-1 reveal active">
+          <p
+            class="font-label-sm text-label-sm text-primary mb-4 uppercase tracking-[0.2em]"
+          >
+            Frontend Developer
+          </p>
+          <h1
+            class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 leading-tight"
+          >
+            Arquitetando
+            <span class="text-vibrant-indigo">experiências</span> digitais de
+            alto impacto.
+          </h1>
+          <p
+            class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl"
+          >
+            Especializado em transformar conceitos complexos em interfaces
+            fluidas e performáticas. Unindo código limpo com design minimalista.
+          </p>
+          <div class="flex gap-4">
+            <a
+              class="bg-vibrant-indigo text-white px-8 py-4 rounded-full font-bold transition-all hover:shadow-[0_0_20px_rgba(99,102,241,0.5)]"
+              href="#projetos"
+              >Ver Projetos</a
+            >
+            <a
+              class="border border-outline-variant text-on-surface px-8 py-4 rounded-full font-bold hover:bg-white/5 transition-all"
+              href="#contato"
+              >Contato</a
+            >
+          </div>
+        </div>
+        <div
+          class="flex-1 w-full relative reveal active"
+          style="transition-delay: 200ms"
+        >
+          <div class="aspect-square rounded-2xl overflow-hidden p-2">
+            <img
+              alt="Kevin Soares"
+              class="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-700"
+              data-alt="A professional portrait of a modern developer in a dark studio setting. The lighting is dramatic and moody, with cool blue and indigo rim lights that highlight the subject's profile against a deep black background. The overall aesthetic is sleek, minimalist, and high-tech, perfectly matching the dark mode portfolio theme. The subject has a confident expression, symbolizing digital craftsmanship."
+              src="assets/imagem.png"
+            />
+          </div>
+          <!-- Decorative elements -->
+          <div
+            class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-vibrant-indigo/5 blur-[120px] rounded-full"
+          ></div>
+        </div>
+      </section>
+      <!-- Sobre Section -->
+      <section
+        class="py-[120px] md:py-[200px] px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
+        id="sobre"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+          <div class="order-2 md:order-1 reveal">
+            <div class="relative rounded-2xl overflow-hidden aspect-[4/5]">
+              <img
+                alt="Workspace"
+                class="w-full h-full object-fit grayscale"
+                data-alt="A top-down view of a minimalist workspace featuring a high-end laptop, a clean mechanical keyboard, and a notebook on a dark matte surface. The scene is illuminated by a single warm desk lamp creating sharp, architectural shadows. The color palette is restricted to blacks, greys, and subtle metallic gold accents. The atmosphere is quiet, focused, and professional, reflecting a meticulous design process."
+                src="assets/ima.png"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"
+              ></div>
+            </div>
+          </div>
+          <div class="order-1 md:order-2 reveal">
+            <h2 class="font-headline-md text-headline-md text-on-surface mb-8">
+              Sobre Mim
+            </h2>
+            <div
+              class="space-y-6 font-body-lg text-body-lg text-on-surface-variant"
+            >
+              <p>
+                Olá! Eu sou o Kevin, um desenvolvedor apaixonado por criar
+                soluções que vivem na interseção entre funcionalidade e
+                estética. Minha jornada no desenvolvimento web começou com a
+                curiosidade de como as coisas funcionam por baixo do capô e
+                evoluiu para uma carreira focada em entregar excelência técnica.
+              </p>
+              <p>
+                Acredito que o design não é apenas como algo se parece, mas como
+                funciona. Por isso, cada linha de código que escrevo é pensada
+                para proporcionar a melhor experiência possível ao usuário
+                final, mantendo a escalabilidade e a manutenção do projeto.
+              </p>
+              <p>
+                Quando não estou codando, estou explorando novas tecnologias,
+                estudando design visual ou planejando o próximo grande projeto
+                digital.
+              </p>
+            </div>
+            <div class="mt-10 grid grid-cols-2 gap-6">
+              <div>
+                <h4 class="text-vibrant-indigo font-bold text-2xl">2+</h4>
+                <p class="text-label-sm font-label-sm text-text-muted">
+                  Anos de Experiência
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projetos Section -->
+      <section
+        class="py-[120px] md:py-[200px] bg-surface-container-lowest"
+        id="projetos"
+      >
+        <div
+          class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
+        >
+          <div class="flex justify-between items-end mb-16 reveal">
+            <div>
+              <p
+                class="font-label-sm text-label-sm text-primary mb-2 uppercase tracking-[0.2em]"
+              >
+                Portfolio
+              </p>
+              <h2 class="font-headline-md text-headline-md text-on-surface">
+                Projetos Selecionados
+              </h2>
+            </div>
+            <a
+              class="hidden md:block text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md underline underline-offset-8"
+              href="https://github.com/kevinsoares-ss"
+              >Ver todos no GitHub</a
+            >
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+            <!-- Project 1 -->
+            <div class="reveal group">
+              <div
+                class="glass-card rounded-2xl overflow-hidden mb-6 aspect-video relative grayscale hover:grayscale-0 transition-all duration-700="
+              >
+                <img
+                  alt="Mario Galaxy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  data-alt="A stylized digital illustration showcasing a colorful gaming universe with floating platforms and cosmic elements. The art style is vibrant yet professional, using high-saturation purples and indigos. The scene is presented as a high-fidelity screen capture of a premium web application, with clean UI elements framing the edges. The lighting is cinematic with glowing particles and soft bloom effects."
+                  src="assets/desktop-print-hero-section.png"
+                />
+                <div
+                  class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <a
+                    class="bg-white text-black px-6 py-3 rounded-full font-bold"
+                    href="https://kevinsoares-ss.github.io/Mario-galaxy/"
+                    target="_blank"
+                    >Ver Site</a
+                  >
+                </div>
+              </div>
+              <h3 class="font-headline-md text-xl text-on-surface mb-2">
+                Mario Galaxy
+              </h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                Experiência imersiva inspirada na franquia clássica com foco em
+                animações fluidas.
+              </p>
+              <div class="flex gap-2">
+                <span
+                  class="px-3 py-1 bg-surface-variant rounded-full text-[10px] font-label-sm text-primary uppercase"
+                  >HTML/CSS</span
+                >
+                <span
+                  class="px-3 py-1 bg-surface-variant rounded-full text-[10px] font-label-sm text-primary uppercase"
+                  >JavaScript</span
+                >
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="reveal group" style="transition-delay: 100ms">
+              <div
+                class="glass-card rounded-2xl overflow-hidden mb-6 aspect-video relative grayscale hover:grayscale-0 transition-all duration-700="
+              >
+                <img
+                  alt="Aura Studio"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  data-alt="An abstract digital artwork featuring fluid, ethereal shapes in shades of gold and deep charcoal. The composition is elegant and minimalist, suggesting a high-end creative studio identity. The surfaces have a soft matte texture with subtle reflections. The lighting is diffused and atmospheric, creating a sense of sophisticated luxury and artistic precision."
+                  src="assets/aura.png"
+                />
+                <div
+                  class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <a
+                    class="bg-white text-black px-6 py-3 rounded-full font-bold"
+                    href="https://kevinsoares-ss.github.io/aura-studio/"
+                    target="_blank"
+                    >Ver Site</a
+                  >
+                </div>
+              </div>
+              <h3 class="font-headline-md text-xl text-on-surface mb-2">
+                Aura Studio
+              </h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                Landing page minimalista para um estúdio criativo focado em
+                design de marcas.
+              </p>
+              <div class="flex gap-2">
+                <span
+                  class="px-3 py-1 bg-surface-variant rounded-full text-[10px] font-label-sm text-primary uppercase"
+                  >UI Design</span
+                >
+                <span
+                  class="px-3 py-1 bg-surface-variant rounded-full text-[10px] font-label-sm text-primary uppercase"
+                  >Tailwind</span
+                >
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="reveal group">
+              <div
+                class="glass-card rounded-2xl overflow-hidden mb-6 aspect-video relative grayscale hover:grayscale-0 transition-all duration-700="
+              >
+                <img
+                  alt="Loja Projeto Ingrid"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  data-alt="A modern e-commerce interface mockup displayed on a high-resolution monitor. The design features clean product grids, sophisticated typography, and a neutral color palette of whites, greys, and blacks. The image focuses on the sleek navigation and intuitive user flow. Soft ambient lighting from a window creates a realistic, professional office environment."
+                  src="assets/ingride1.png"
+                />
+                <div
+                  class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <a
+                    class="bg-white text-black px-6 py-3 rounded-full font-bold"
+                    href="https://kevinsoares-ss.github.io/lojaprojetoingride/"
+                    target="_blank"
+                    >Ver Site</a
+                  >
+                </div>
+              </div>
+              <h3 class="font-headline-md text-xl text-on-surface mb-2">
+                Loja Projeto Ingrid
+              </h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                E-commerce completo com fluxo de usuário otimizado e interface
+                intuitiva.
+              </p>
+              <div class="flex gap-2">
+                <span
+                  class="px-3 py-1 bg-surface-variant rounded-full text-[10px] font-label-sm text-primary uppercase"
+                  >E-commerce</span
+                >
+                <span
+                  class="px-3 py-1 bg-surface-variant rounded-full text-[10px] font-label-sm text-primary uppercase"
+                  >Frontend</span
+                >
+              </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="reveal group" style="transition-delay: 100ms">
+              <div
+                class="glass-card rounded-2xl overflow-hidden mb-6 aspect-video relative grayscale hover:grayscale-0 transition-all duration-700="
+              >
+                <img
+                  alt="Projeto Website"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  data-alt="A dynamic shot of a digital dashboard on a tablet, showcasing complex data visualizations, charts, and graphs. The interface uses a dark mode palette with vibrant neon accents in indigo and teal. The composition is angled to show depth and the premium glass finish of the device. The background is a blurred tech office with soft bokeh lights."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPtCdqt7l0optvOatas82CQZk-AlLT4Fo9fd2xKUwKMrRGxYB-VV8NtSWOoy_-ReR-9WDaHJQve9EO9FXv0QHpWYA_LqY8Z41DGMPABEmLnZdZx5GzvmermDdks4SBOANXuyVZbTfVKTuD1QNMwGXCYXGWXUX2jClmlGGhvDAfHkS0GFCYvMHpvv17-mG2kV5IDWA1d-Qdd8fC6O-jczajrMXktNmJ2lMw090JldrYKOmq3-kLWK9YjyEFLSbfv2wP6cdXYEq5Usr5"
+                />
+                <div
+                  class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <a
+                    class="bg-white text-black px-6 py-3 rounded-full font-bold"
+                    href="https://kevinsoares-ss.github.io/projetowebsite/"
+                    target="_blank"
+                    >Ver Site</a
+                  >
+                </div>
+              </div>
+              <h3 class="font-headline-md text-xl text-on-surface mb-2">
+                Projeto Website
+              </h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                Plataforma corporativa moderna focada em conversão e
+                usabilidade.
+              </p>
+              <div class="flex gap-2">
+                <span
+                  class="px-3 py-1 bg-surface-variant rounded-full text-[10px] font-label-sm text-primary uppercase"
+                  >Business</span
+                >
+                <span
+                  class="px-3 py-1 bg-surface-variant rounded-full text-[10px] font-label-sm text-primary uppercase"
+                  >React</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Habilidades Section -->
+      <section
+        class="py-[120px] md:py-[200px] px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
+      >
+        <div class="text-center mb-20 reveal">
+          <h2 class="font-headline-md text-headline-md text-on-surface mb-4">
+            Stack Tecnológica
+          </h2>
+          <p
+            class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto"
+          >
+            As ferramentas e linguagens que utilizo para dar vida aos projetos
+            mais desafiadores.
+          </p>
+
+          <img
+            src="assets/imagem1.png"
+            class="w-[1000px] h-auto mx-auto block"
+          />
+        </div>
+      </section>
+      <!-- Contato Section -->
+      <section
+        class="py-[120px] mt-[-250px] md:py-[200px] px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
+        id="contato"
+      >
+        <div
+          class="glass-card p-12 md:p-20 rounded-[32px] overflow-hidden relative reveal"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
+            <div>
+              <h2
+                class="font-headline-md text-headline-md text-on-surface mb-6"
+              >
+                Vamos trabalhar juntos?
+              </h2>
+              <p
+                class="font-body-lg text-body-lg text-on-surface-variant mb-12"
+              >
+                Estou sempre aberto a novos projetos, colaborações ou apenas um
+                café virtual para falar sobre tecnologia.
+              </p>
+              <div class="space-y-6">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 rounded-full bg-vibrant-indigo/20 flex items-center justify-center text-vibrant-indigo"
+                  >
+                    <span class="material-symbols-outlined">mail</span>
+                  </div>
+                  <span class="font-body-md text-body-md"
+                    >kevinsoares474@gmail.com</span
+                  >
+                </div>
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 rounded-full bg-vibrant-indigo/20 flex items-center justify-center text-vibrant-indigo"
+                  >
+                    <span class="material-symbols-outlined">location_on</span>
+                  </div>
+                  <span class="font-body-md text-body-md" data-location="Brasil"
+                    >Brasil</span
+                  >
+                </div>
+              </div>
+            </div>
+            <form
+              class="space-y-6"
+              onsubmit="
+                event.preventDefault();
+                alert('Mensagem enviada com sucesso!');
+              "
+            >
+              <div class="space-y-2">
+                <label
+                  class="font-label-sm text-label-sm text-text-muted uppercase"
+                  >Nome</label
+                >
+                <input
+                  class="w-full bg-surface-container border-none border-b border-outline-variant focus:ring-0 focus:border-vibrant-indigo transition-all p-4 rounded-xl text-on-surface"
+                  placeholder="Seu nome"
+                  type="text"
+                />
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="font-label-sm text-label-sm text-text-muted uppercase"
+                  >E-mail</label
+                >
+                <input
+                  class="w-full bg-surface-container border-none border-b border-outline-variant focus:ring-0 focus:border-vibrant-indigo transition-all p-4 rounded-xl text-on-surface"
+                  placeholder="Seu e-mail"
+                  type="email"
+                />
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="font-label-sm text-label-sm text-text-muted uppercase"
+                  >Mensagem</label
+                >
+                <textarea
+                  class="w-full bg-surface-container border-none border-b border-outline-variant focus:ring-0 focus:border-vibrant-indigo transition-all p-4 rounded-xl text-on-surface"
+                  placeholder="Como posso ajudar?"
+                  rows="4"
+                ></textarea>
+              </div>
+              <button
+                class="w-full bg-vibrant-indigo text-white font-bold py-5 rounded-xl hover:opacity-90 transition-opacity"
+              >
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+          <!-- Background Glow -->
+          <div
+            class="absolute top-0 right-0 w-[500px] h-[500px] bg-vibrant-indigo/10 blur-[150px] -mr-64 -mt-64"
+          ></div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="w-full py-12 border-t border-white/5 bg-surface-container-lowest"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-gutter"
+      >
+        <span
+          class="font-display-lg-mobile text-display-lg-mobile text-on-surface font-bold tracking-tighter"
+          >Kevin Soares</span
+        >
+        <div class="flex gap-8">
+          <a
+            class="text-text-muted hover:text-primary transition-colors font-label-sm text-label-sm"
+            href="https://www.linkedin.com/in/kevin-soares-448568395/"
+            >LinkedIn</a
+          >
+          <a
+            class="text-text-muted hover:text-primary transition-colors font-label-sm text-label-sm"
+            href="https://github.com/kevinsoares-ss"
+            >GitHub</a
+          >
+          <a
+            class="text-text-muted hover:text-primary transition-colors font-label-sm text-label-sm"
+            href="https://www.instagram.com/"
+            >Instagram</a
+          >
+        </div>
+        <p class="font-label-sm text-label-sm text-text-muted">
+          © 2024 Kevin Soares.
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
